@@ -7,8 +7,12 @@ menu-bar app that controls Ultimate Ears BOOM-family speakers.
 
 ```bash
 brew tap synchro--/boombar
+brew trust synchro--/boombar
 brew install --cask boombar
 ```
+
+`brew trust` is required because this is a third-party tap (Homebrew 7 refuses
+to load casks from untrusted taps).
 
 Boom Bar is ad-hoc signed and not notarized, so macOS Gatekeeper blocks the
 first launch. Either allow it in **System Settings → Privacy & Security →
@@ -30,4 +34,10 @@ curl -fsSL https://raw.githubusercontent.com/synchro--/boombar/main/install.sh |
 ```bash
 brew uninstall --cask boombar
 brew untap synchro--/boombar
+```
+
+To also remove preferences:
+
+```bash
+brew uninstall --cask --zap boombar
 ```

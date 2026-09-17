@@ -8,9 +8,11 @@ cask "boombar" do
   desc "Menu-bar control for Ultimate Ears BOOM-family speakers"
   homepage "https://github.com/synchro--/boombar"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "BoomBar.app"
+
+  zap trash: "~/Library/Preferences/com.synchro.boombar.plist"
 
   caveats <<~EOS
     Boom Bar is ad-hoc signed and not notarized, so macOS Gatekeeper blocks the
@@ -23,8 +25,4 @@ cask "boombar" do
 
       curl -fsSL https://raw.githubusercontent.com/synchro--/boombar/main/install.sh | bash
   EOS
-
-  zap trash: [
-    "~/Library/Preferences/com.synchro.boombar.plist",
-  ]
 end
