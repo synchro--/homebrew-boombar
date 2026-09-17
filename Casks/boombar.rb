@@ -2,8 +2,7 @@ cask "boombar" do
   version "1.0.0"
   sha256 "1e1a0ba0297f1c11ed57ce8ce259175c5c4a543f55c9bae7a2bccb5ddad2f3f5"
 
-  url "https://github.com/synchro--/boombar/releases/download/v#{version}/BoomBar-#{version}.dmg",
-      verified: "github.com/synchro--/boombar/"
+  url "https://github.com/synchro--/boombar/releases/download/v#{version}/BoomBar-#{version}.dmg"
   name "Boom Bar"
   desc "Menu-bar control for Ultimate Ears BOOM-family speakers"
   homepage "https://github.com/synchro--/boombar"
