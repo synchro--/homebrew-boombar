@@ -1,6 +1,6 @@
 cask "boombar" do
-  version "1.0.0"
-  sha256 "1e1a0ba0297f1c11ed57ce8ce259175c5c4a543f55c9bae7a2bccb5ddad2f3f5"
+  version "1.1.0"
+  sha256 "286de1b388e895109f19153230e3c3bb16a30a0c8afea77499eb6d0be88ad1e7"
 
   url "https://github.com/synchro--/boombar/releases/download/v#{version}/BoomBar-#{version}.dmg"
   name "Boom Bar"
